@@ -312,9 +312,9 @@ svg {
 }
 
 .floorplan-img {
-  width: 70%; /* Scale to 100% of its parent container's width */
-  max-width: 500px; /* Optional: Limit the maximum width */
-  height: 70%; /* Maintain the aspect ratio */
+  width: 100%; /* Scale to 100% of its parent container's width */
+  max-width: 1000px; /* Optional: Limit the maximum width */
+  height: 10%; /* Maintain the aspect ratio */
   margin: 20px auto; /* Center the image vertically and horizontally */
   display: block; /* Ensure the image behaves as a block element for centering */
 }
