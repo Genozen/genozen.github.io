@@ -38,21 +38,35 @@
     <!-- Services Section -->
     <section class="page-section" id="services">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Our Services</h2>
+            <h2 class="h1 text-center mt-0">Our Services</h2>
             <hr class="divider" />
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">3D Floor Plan</h3>
-                        <p class="text-muted mb-0">...</p>
+                        <h3 class="h3 mb-2">3D Scanning</h3>
+                        <p class="h5 text-muted mb-0"> From exterior to interior, we will scan your property and generate visual pleasing 3D models.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">2D Floor Plan</h3>
-                        <p class="text-muted mb-0">...</p>
+                        <h3 class="h3 mb-2">3D/2D Floor Plan</h3>
+                        <p class="h5 text-muted mb-0"> Need a quick floor plan? We can help generate both 3D and 2D style floor plans</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                        <h3 class="h3 mb-2">AI touchup</h3>
+                        <p class="h5 text-muted mb-0"> Using state of the art AI generation, we can sparkup your viewings and restage them.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h3 mb-2">Web listing</h3>
+                        <p class="h6 text-muted mb-0">Don't have your own listing? For a small subscription fee, we will host your listings accessible to your buyers.</p>
                     </div>
                 </div>
             </div>
@@ -84,8 +98,8 @@
                     </model-viewer>
                 </div>
             </div>
-            
-            <h2 class="mb-4">AI Re-imaging</h2>
+
+            <h2 class="mb-4">AI touchup (Beta)</h2>
             <div class="row">
                 <div class="twentytwenty-container">
                     <img src="assets/3D_model/pre-staging-view.jpeg" />
@@ -120,8 +134,8 @@
       <script src="js/jquery.twentytwenty.js"></script>
       <script>
       $(function(){
-        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
       });
     </script>
 </body>
