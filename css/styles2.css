@@ -311,6 +311,14 @@ svg {
   vertical-align: middle;
 }
 
+.floorplan-img {
+  width: 50%; /* Scale to 100% of its parent container's width */
+  max-width: 500px; /* Optional: Limit the maximum width */
+  height: 50%; /* Maintain the aspect ratio */
+  margin: 20px auto; /* Center the image vertically and horizontally */
+  display: block; /* Ensure the image behaves as a block element for centering */
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse;
@@ -10871,7 +10879,15 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #000;
+  opacity: 1;
+}
+
+hr.long_divider {
+  height: 0.2rem;
+  max-width: 20.25rem;
+  margin: 1.5rem auto;
+  background-color: #000;
   opacity: 1;
 }
 

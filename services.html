@@ -79,13 +79,16 @@
 
     <section class="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-gold">
+            <hr class="long_divider" />
             <h2 class="mb-4">3D floor model</h2>
+            <hr class="long_divider" />
             <div class="row">
                 <div class="col-md-6">
                     <model-viewer src="assets/3D_model/living_room_lidar.glb" 
                                   alt="A 3D model of an object"
                                   loading="eager" 
-                                  camera-controls 
+                                  camera-controls
+                                  camera-orbit="185deg 55deg 4m" 
                                   auto-rotate 
                                   exposure="0.7"
                                   environment-image="neutral"
@@ -96,16 +99,41 @@
                     <model-viewer src="assets/3D_model/example_room.glb" 
                                   alt="A 3D model of an object"
                                   loading="eager" 
-                                  camera-controls 
+                                  camera-controls
+                                  camera-orbit="150deg 45deg 4m"
                                   auto-rotate 
-                                  exposure="0.7"
+                                  exposure="0.5"
                                   environment-image="neutral"
                                   style="width: 100%; height: 500px; background-color: black;">
                     </model-viewer>
                 </div>
             </div>
+            <hr class="long_divider" />
+            <h2 class="mb-4">Floor Plan</h2>
+            <hr class="long_divider" />
+            <img src="assets/3D_model/floorplan.png" alt="Floorplan" class="floorplan-img">
 
+            <hr class="long_divider" />
+            <h2 class="mb-4">Aerial 3D Model</h2>
+            <hr class="long_divider" />
+            <div class="row">
+                <div class="col-md-12">
+                    <model-viewer src="assets/3D_model/test_ariel.glb"
+                    alt="A 3D model of an object"
+                    loading="eager" 
+                    camera-controls
+                    camera-orbit="0deg 65deg 1m" 
+                    auto-rotate 
+                    exposure="1.2"
+                    environment-image="neutral"
+                    style="width: 100%; height: 500px; background-color: black;">
+                    </model-viewer>
+                </div>
+            </div>
+
+            <hr class="long_divider" />
             <h2 class="mb-4">AI touchup (Beta)</h2>
+            <hr class="long_divider" />
             <div class="row">
                 <div class="twentytwenty-container">
                     <img src="assets/3D_model/pre-staging-view.jpeg" />
