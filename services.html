@@ -9,7 +9,14 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles2.css" rel="stylesheet" />
+
+    <!-- 3D model viewer -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- sliders -->
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+ 
 </head>
 <body>
     <!-- Navigation -->
@@ -57,7 +64,7 @@
             <h2 class="mb-4">3D floor model</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <model-viewer src="assets/3D_model/example_room.glb" 
+                    <model-viewer src="assets/3D_model/living_room_lidar.glb" 
                                   alt="A 3D model of an object" 
                                   camera-controls 
                                   auto-rotate 
@@ -67,7 +74,7 @@
                     </model-viewer>
                 </div>
                 <div class="col-md-6">
-                    <model-viewer src="assets/3D_model/living_room_lidar.glb" 
+                    <model-viewer src="assets/3D_model/example_room.glb" 
                                   alt="A 3D model of an object" 
                                   camera-controls 
                                   auto-rotate 
@@ -79,10 +86,25 @@
             </div>
             <a class="btn btn-light btn-xl mt-4" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
         </div>
+        
+        <div class="container px-4 px-lg-5 text-gold">
+            <h2 class="mb-4">3D floor model</h2>
+            <div class="twentytwenty-container">
+                <img src="assets/3D_model/pre-staging-view.jpeg" />
+                <img src="assets/3D_model/post-staging-view.png" />
+            </div>
+        </div>
+
     </section>
+
+
+    <div class="large-8 columns">
+
+    </div>
+
     <!-- Footer-->
     <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5"><div class="small text-bb">Copyright &copy; NH 2024-2025</div></div>
+        <div class="container px-4 px-lg-5"><div class="small text-bb">NH Copyright &copy; 2024-2025</div></div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -90,5 +112,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+      <script src="js/jquery.event.move.js"></script>
+      <script src="js/jquery.twentytwenty.js"></script>
+      <script>
+      $(function(){
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+      });
+    </script>
 </body>
 </html>
